@@ -2,5 +2,5 @@
 #words in it. 
 read -p "Enter file name: " filename
 echo "The Unique words in all the files in the current directory are listed below:"
-printf "n"
+printf "\n"
 cat $filename | tr " " "\n" | sort | uniq -i 
