@@ -5,5 +5,5 @@
 
 for i in *; do
 
-    mv "$i" $(echo "$i" | sed -r -e 's/.*/\U&/' -e 's/\.TXT$/\u.txt/');
+   mv "$i" $(echo "$i" | sed -r -e 's/.*/\U&/' -e 's/\.TXT$/\u.txt/');
 done
